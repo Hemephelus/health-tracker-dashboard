@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* The animation code */
+@keyframes anime-header {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+
+/* The element to apply the animation to */
+header {
+  animation-name: anime-header;
+  animation-duration: 2s;
+}

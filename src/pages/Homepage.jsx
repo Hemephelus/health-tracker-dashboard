@@ -1,18 +1,20 @@
 import React from 'react'
 import { Route, Routes } from "react-router-dom";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import HomeBody from "../components/HomeBody";
+import SignUp from "./SignUp"
+import LogIn from "./LogIn"
 
 
 const Homepage = () => {
   return (
     <div  className="flex flex-col   ">
-        <Header />
+
       <Routes>
         <Route path="/" element={<HomeBody />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<LogIn />} />
       </Routes>
-      <Footer />
+   
       
     </div>
   )

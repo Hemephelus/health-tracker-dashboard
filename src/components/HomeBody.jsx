@@ -1,8 +1,14 @@
 import React from 'react'
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const HomeBody = () => {
   return (
-    <div>HomeBody</div>
+    <div>
+         <Header />
+         Not one ze
+         <Footer />
+    </div>
   )
 }
 
